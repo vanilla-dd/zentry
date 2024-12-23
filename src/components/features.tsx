@@ -45,6 +45,7 @@ const BentoCard = ({
       });
     }
   }, []);
+
   return (
     <div className={className} ref={cardRef}>
       <div className="relative size-full overflow-hidden rounded-lg">
@@ -136,11 +137,11 @@ const Features = () => {
 
           <BentoCard
             title={
-              <h1 className="bento-title special-font text-black">
+              <div className="bento-title special-font text-black">
                 Mor<b>e</b> co<b>m</b>ing so<b>o</b>n
-              </h1>
+              </div>
             }
-            className="col-span-1 row-span-1 flex flex-col justify-between rounded-lg bg-violet-300 p-5"
+            className="col-span-2 row-span-1 flex flex-col justify-between rounded-lg bg-violet-300 p-5 md:col-span-1"
           >
             <TiLocationArrow className="m-5 scale-[5] self-end" />
           </BentoCard>
