@@ -90,7 +90,7 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="grid auto-rows-fr grid-cols-2 gap-4">
+        <div className="grid grid-rows-9 gap-4 md:grid-cols-2 md:grid-rows-[repeat(9,minmax(200px,1fr))]">
           <BentoCard
             src="/videos/feature-1.mp4"
             title={
@@ -98,7 +98,7 @@ const Features = () => {
                 radia<b>n</b>t
               </>
             }
-            className="col-span-2 row-span-1 overflow-hidden rounded-lg border border-white/40"
+            className="col-span-2 overflow-hidden rounded-lg border border-white/40 md:row-span-3"
             description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
           />
 
@@ -109,7 +109,7 @@ const Features = () => {
                 zig<b>m</b>a
               </>
             }
-            className="col-span-2 row-span-2 overflow-hidden rounded-lg border border-white/40 md:col-span-1"
+            className="col-span-2 row-span-4 overflow-hidden rounded-lg border border-white/40 md:col-span-1"
             description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
           />
 
@@ -120,7 +120,7 @@ const Features = () => {
                 n<b>e</b>xus
               </>
             }
-            className="col-span-2 row-span-1 row-start-2 ms-14 rounded-lg border border-white/40 md:col-span-1 md:row-start-auto md:ms-0"
+            className="col-span-2 row-span-2 ms-14 rounded-lg border border-white/40 md:col-span-1 md:ms-0"
             description="A gamified social hub, adding a new dimension of play to your identity, Web3 engagement and social interaction."
           />
 
@@ -131,7 +131,7 @@ const Features = () => {
                 az<b>u</b>l
               </>
             }
-            className="col-span-2 row-span-1 row-start-3 me-20 overflow-hidden rounded-lg border border-white/40 md:col-span-1 md:row-start-auto md:me-0"
+            className="col-span-2 row-span-2 me-20 overflow-hidden rounded-lg border border-white/40 md:col-span-1 md:me-0"
             description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
           />
 
@@ -141,7 +141,7 @@ const Features = () => {
                 Mor<b>e</b> co<b>m</b>ing so<b>o</b>n
               </div>
             }
-            className="col-span-2 row-span-1 flex flex-col justify-between rounded-lg bg-violet-300 p-5 md:col-span-1"
+            className="col-span-2 overflow-hidden rounded-lg bg-violet-300 p-5 md:col-span-1 md:row-span-2"
           >
             <TiLocationArrow className="m-5 scale-[5] self-end" />
           </BentoCard>
@@ -149,7 +149,7 @@ const Features = () => {
           <BentoCard
             src="/videos/feature-5.mp4"
             title=""
-            className="col-span-1 row-span-1 hidden overflow-hidden rounded-lg md:block"
+            className="col-span-1 row-span-2 hidden overflow-hidden rounded-lg md:block"
           />
         </div>
       </div>

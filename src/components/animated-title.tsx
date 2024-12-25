@@ -10,6 +10,7 @@ const AnimatedTitle = ({
   containerClass: string;
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const animateWordRefs = useRef<HTMLSpanElement[]>([]);
   useGSAP(() => {
     const titleAnimation = gsap.timeline({
       scrollTrigger: {
@@ -19,7 +20,7 @@ const AnimatedTitle = ({
         toggleActions: 'play none none reverse',
       },
     });
-    titleAnimation.to('.animated-word', {
+    titleAnimation.to(animateWordRefs.current, {
       opacity: 1,
       transform: 'translate3d(0, 0, 0) rotateY(0deg) rotateX(0deg)',
       ease: 'power2.inOut',
@@ -38,6 +39,9 @@ const AnimatedTitle = ({
             <span
               key={i}
               className="animated-word"
+              ref={(el) => {
+                if (el) animateWordRefs.current.push(el); // Store ref
+              }}
               dangerouslySetInnerHTML={{ __html: word }}
             />
           ))}
