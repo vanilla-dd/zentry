@@ -7,7 +7,7 @@ const Story = () => {
 
   return (
     <div id="story" className="min-h-dvh w-full bg-black text-blue-50">
-      <div className="flex size-full flex-col items-center p-24 py-10">
+      <div className="flex size-full flex-col items-center py-10 md:p-24">
         <p className="font-general text-sm uppercase md:text-xs">
           The multiversal ip world
         </p>
